@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.sigame">
+
+    <!-- Разрешения, если нужны -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SiGame">
+
+        <!-- AuthActivity - главный экран приложения, например, если это первое окно -->
+        <activity android:name=".AuthActivity"
+            tools:ignore="MissingClass"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- GameActivity - игровой экран -->
+        <activity android:name=".GameActivity" android:exported="false" />
+
+        <!-- Можно добавить другие Activity или компоненты, если они будут в вашем коде. -->
+
+    </application>
+
+</manifest>

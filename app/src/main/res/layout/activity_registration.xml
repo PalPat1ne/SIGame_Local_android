@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="48dp"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Имя"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:background="@android:drawable/edit_text" />
+
+    <EditText
+        android:id="@+id/birthDateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Дата рождения (dd.MM.yyyy)"
+        android:inputType="date"
+        android:layout_marginBottom="16dp"
+        android:minHeight="48dp"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:background="@android:drawable/edit_text" />
+
+    <EditText
+        android:id="@+id/serverEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Сервер:Порт (например, 192.168.0.100:12345)"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"
+        android:minHeight="48dp"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:background="@android:drawable/edit_text" />
+
+    <ImageView
+        android:id="@+id/avatarImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/avatar_placeholder"
+        android:contentDescription="Аватар"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <Button
+        android:id="@+id/selectAvatarButton"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginBottom="24dp"
+        android:text="Выбрать аватар" />
+
+    <Button
+        android:id="@+id/connectButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Подключиться"
+        android:background="?attr/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

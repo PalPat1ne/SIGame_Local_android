@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/playerNameTextView"
+        android:text="Имя игрока"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/connectionIndicator"
+        android:layout_width="380dp"
+        android:layout_height="24dp"
+        android:contentDescription="Статус подключения"
+        android:src="@drawable/ic_disconnected" />
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="match_parent"
+        android:layout_height="737dp"
+        android:backgroundTint="#FF0000"
+        android:text="Нажать"
+        android:textColor="#FFFFFF" />
+</LinearLayout>
